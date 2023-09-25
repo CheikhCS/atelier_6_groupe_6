@@ -185,6 +185,48 @@ header .header_nav_bar {
     border: 1px solid var(--couleur_bleu_clair);
     padding: 3px;
 }
+.comments{
+    background-color: var(--couleur_bleu_clair);
+    padding: 30px;
+    height: 500px;
+}
+.comments h4,hr{
+    margin-left: 25px;
+}
+.comments hr
+{
+    width: 10%;
+    border: 2px solid var(--couleur_button);
+}
+.formulaire {
+    margin: 30px;
+}
+
+.formulaire .input_text_mail {
+    width: 310px;
+}
+
+.formulaire .subject, textarea {
+    width: 625px;
+}
+
+.my_button {
+    color: var(--couleur_blanche);
+    background-color: var(--couleur_button);
+    border: 1px solid var(--couleur_button);
+    padding: 5px 15px;
+    margin-top: 5px;
+    width: 100%;
+}
+
+/*Deuxieme colonne*/
+.grid_container_blog_detail .col2{
+    display: grid;
+    grid-template-rows: 3% 20% 20% 20%;
+}
+.col2 .grid_item_blog{
+    border: 1px solid var(--couleur_bleu2);
+}
 
 
 /*debut partie footer*/
