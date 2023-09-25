@@ -153,61 +153,38 @@ header .header_nav_bar {
     grid-template-columns: 8fr 4fr;
     gap: 10px;
     border: 1px solid var(--couleur_bleu2);
-    margin: 30px;
 }
 .grid_container_blog_detail .col1{
     display: grid;
-    grid-template-rows: 6fr 3fr 3fr;
+    grid-template-rows: 6fr 4fr 4fr;
     padding: 20px;
     gap: 10px;
 }
-.grid_container_blog_detail .image_text, .leave_comment, .comments{
-    border: 1px solid var(--couleur_button);
-}
+
 .text h3{
     font-weight: 900;
     font-size: 28px;
 }
+.leave_comment hr{
+    width: 10%;
+    margin-left: 10px;
+    border: 2px solid var(--couleur_button);
+}
 .commentaires{
-    display: inline;
-    justify-content: left;
+    display: grid;
+    grid-template-columns: 3fr 9fr;
+    margin-top: 20px;
+   
 }
-/* .grid_item_blog{
-    border: 1px solid var(--couleur_footer);
+.text_comments h6 span{
+    color: var(--couleur_button);
+    font-weight: 900;
 }
-.grid_container_blog_detail .col1{
-    grid-column: 1 / 8;
-    grid-row: 1 / 6;
+.text_comments button{
+    background-color: var(--couleur_bleu_clair);
+    border: 1px solid var(--couleur_bleu_clair);
+    padding: 3px;
 }
-.grid_container_blog_detail .search {
-    grid-column: 8 / 10;
-    grid-row: 6 / 12;
-}
-.grid_container_blog_detail .comment {
-    grid-column: 1 / 8;
-    grid-row: 12 / 18;
-}
-.grid-container_blog_detail  .categorie{
-    grid-column: 8 / 10;
-}
-.grid_container_blog_detail .leave_comment {
-    grid-column: 1 / 8;
-    grid-row: 1 / 6;
-}
-.grid_container_blog_detail .recent_post {
-    grid-column: 8 / 10;
-}
-.grid-container_blog_detail .images {
-    grid-column: 8 / 10;
-}
-.grid_container_blog_detail .tag_cloud {
-    grid-column: 8 / 10;
-} 
-.grid_container_blog_detail .plaint_text {
-    grid-column: 8 / 10;
-}*/
-
-
 
 
 /*debut partie footer*/
@@ -229,7 +206,7 @@ header .header_nav_bar {
     color: var(--couleur_blanche);
     padding-top: 30px;
     text-align: center;
-    height: 370px;
+    height: 350px;
 }
 
 .liens ul li {
@@ -279,8 +256,7 @@ button {
 .banniere_footer {
     color: var(--couleur_blanche);
     background-color: var(--couleur_banniere);
-    padding: 25px;
-    /* text-align: ; */
+    padding: 15px;
     height: 50px;
 }
 
