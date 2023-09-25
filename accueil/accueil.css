@@ -1,0 +1,391 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    /* border: 1px solid sandybrown; */
+    margin: 0 auto;
+}
+header {
+    /* border: 1px solid maroon; */
+    width: 100vh;
+    width: 100%;
+    background-image: url(images/banierre-image.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0 auto;    
+}
+
+/* Debut banierre  */
+
+header .banierre{
+    display: grid;
+    grid-template-columns: 5% 90% 5%;
+    width: 100%;
+    text-align: center;
+    padding: 40vh 0;
+    color: white;
+}
+
+header .banierre .chevron{
+    margin-top: 10vh;
+    font-size: 4vh;
+}
+
+header .banierre .titre{
+    margin-bottom: 3vh;
+    font-size: 3vh;
+}
+
+header .banierre h1{
+    font-size: 6vh;
+}
+
+header .banierre button{
+    padding: 2vh 3vh;
+    margin: 3vh;
+    font-size: 18px;
+    border: none;
+}
+
+header .banierre button a{
+    color: white;
+    text-decoration: none;
+}
+
+header .banierre .free{
+    background-color: #06A3DA;
+    
+}
+
+header .banierre .contact{
+    background-color: #2B3B55;
+    
+}
+/* Fin banierre  */
+
+/* Debut statistics  */
+.section-accueil-1 .statistic{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 0 45vh;
+    
+    margin: 0 auto;
+}
+
+.section-accueil-1 .statistic .element-statistic{
+    display: flex;
+    padding: 3vh;
+    background-color: #06A3DA;
+    color: white;
+    margin-top: -5vh;
+}
+
+.section-accueil-1 .statistic .element-statistic button{
+    padding: 0 2vh;
+    background-color: white;
+    color: #06A3DA;
+    border: none;
+}
+
+.section-accueil-1 .statistic .element-statistic .info{
+    margin-left: 2vh;
+}
+
+.section-accueil-1 .statistic .element-statistic .number{
+    font-size: 3vh;
+    margin-top: 1vh;
+}
+
+.section-accueil-1 .statistic .middle{
+    background-color: #EEF9FF;
+    color: #06A3DA;
+}
+
+.section-accueil-1 .statistic .middle button{
+    background-color: #06A3DA;
+    color: white;
+}
+
+.section-accueil-1 .statistic .middle .number{
+    color: black;
+}
+
+/* Fin statistics  */
+/* Fins Accueil Section 1 */
+
+
+/* Debut section 2 Accueil: Section solution  */
+#section-accueil-solution{
+    margin: 0 auto;
+    text-align: center;
+    padding: 0 20vh;
+    margin-top: 10vh;
+}
+.section-accueil .ligne-separation {
+    display: flex;
+    justify-content: center;
+}
+
+.section-accueil .ligne-separation hr{
+    border: 2px solid #06A3DA;
+}
+
+.section-accueil .ligne1{
+    width: 5vh;
+    margin-right: 1vh;
+}
+
+.section-accueil .ligne2{
+    width: 10vh;
+    margin-right: 1vh;
+}
+
+.container-solution{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 3vh;
+    row-gap: 5vh;
+    margin: 2vh 0;
+    
+}
+
+.container-solution .element-solution{
+    background-color: #EEF9FF;
+    border-radius: 1vh;
+    padding: 5vh;
+}
+
+.container-solution .element-solution h3 {
+    font-size: 3vh;
+    margin-bottom: 1vh;
+}
+
+.container-solution .element-solution .btn-icone{
+    padding: 2vh;
+    transform: rotate(45deg);
+    margin-bottom: 3vh;
+    color: white;
+    background-color: #06A3DA;
+    border: none;
+}
+
+.container-solution .element-solution .direction{
+    position: absolute;
+    margin-top: 4vh;
+    margin-left: -4vh;
+    background-color: #C7EAF7;
+    color: white;
+    padding: 1vh 2vh;
+    font-size: 3vh;
+    border: none;
+
+}
+.container-solution .element-solution .second{
+    margin-top: 3vh;
+    background-color: #06A3DA;
+}
+
+
+.container-solution .element-solution .icone{
+    display: inline-block;
+    transform: rotate(-45deg);
+    font-size: 2vh;
+}
+
+.container-solution .active{
+    background-color: #06A3DA;
+    color: white;
+}
+
+
+
+.container-solution .active .tel{
+    font-size: 4vh;
+    margin-top: 1vh;
+}
+
+/* Fin section 2 Accueil: section solution  */
+
+
+/* Debut section 2 Accueil: Section pricing  */
+#section-accueil-pricing{
+    margin: 0 auto;
+    padding: 0 20vh;
+    margin-top: 10vh;
+}
+
+#section-accueil-pricing h1{
+    text-align: center;
+}
+
+.container-pricing{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    /* row-gap: 5vh; */
+    margin: 2vh 0;
+    
+}
+
+.container-pricing .element-pricing{
+    background-color: #EEF9FF;
+    /* */
+}
+
+.container-pricing .element-pricing .title,.content{
+    padding: 3vh; 
+}
+/* .container-pricing .element-pricing hr{
+    border: 1px, solid #06A3DA;
+} */
+.element-pricing .title h3 {
+    font-size: 3vh;
+    margin-bottom: 1vh;
+    color: #06A3DA;
+}
+
+
+
+.element-pricing .content .dollars{
+    font-size: 3vh;
+    position: absolute;
+    margin-top: 1vh;
+    margin-right: 1vh;
+}
+.element-pricing .content .price{
+    font-size: 5vh;
+    margin-left: 2vh;
+}
+.element-pricing .content .month{
+    font-size: 2vh;
+}
+
+.element-pricing  p{
+    margin: 4vh 0;
+    font-size: 2vh;
+    color: gray;
+}
+
+.element-pricing .icone-check{
+    float: right;
+}
+
+.element-pricing .content .fa-check{
+    color: #06A3DA;
+}
+
+.element-pricing .content .close{
+    color: red;
+}
+
+.element-pricing .content button{
+    padding: 2vh 4vh;
+    color: white;
+    background-color: #06A3DA;
+    font-size: 2vh;
+    border: none;
+}
+
+.container-pricing .standard-plan{
+    background-color: white;
+    border: 1px solid white;
+    /* transform: scale(1.2);
+    box-shadow: 12px 2px white;
+     */
+}
+
+.container-pricing .element-pricing:hover{
+    transform: scale(1.1);
+    transition: 1s;
+}
+
+
+/* Fin section 3 Accueil: section princing  */
+
+
+
+
+
+
+
+.element-service:hover{
+    /* border: 1px solid var(--couleurfondmenu); */
+}
+/* Fin section solution  */
+
+/* Debut accueil section 2  */
+
+/* Fin accueil section 2  */
+
+
+/* Debut Media Queries  */
+/* Media queries  */
+@media only screen and (max-width: 950px){
+    header .banierre{
+        /* background-size: 100%; */
+
+    }
+
+    .section-accueil-1 .statistic{
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 0;
+        width: 50%;        
+    }
+    .section-accueil-1 .statistic .element-statistic{
+        margin-bottom: 5vh;
+    }
+
+    .container-solution{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        width: 100%;
+    }
+
+    .container-pricing{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        width: 100%;
+        gap: 2vh;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    
+    .container-solution{
+        display: grid;
+        grid-template-columns: 1fr;
+        /* width: 100%; */
+    }
+
+    .container-pricing{
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 100%;
+        gap: 2vh;
+    }
+
+    /* .card-menu{
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 100%;
+    }
+    
+
+    .container-apropos{
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 100%;
+    }
+
+    
+    .container-portfolio{
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 100%;
+    } */
+    
+}
+
+/* Fin Media Queries  */
