@@ -1,0 +1,292 @@
+:root{
+    --couleur-fond: #06A3DA;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    width: 100%;
+    background-image: url(../public/images/image-banierre.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin: 0 auto;  
+    height: 50vh;  
+}
+
+header .menu1{
+    height: 5vh;
+    border: 1px solid blue;
+    margin-bottom: 2vh;
+    background-color: #091E3E;
+    color: white;
+}
+header .menu2{
+    height: 10vh;
+    border: 1px solid blue;
+    margin-bottom: 2vh;
+}
+
+/* Debut banierre  */
+
+.content-header{
+    border: 1px solid yellow;
+    text-align: center;
+    color: white;
+    margin-top: 8vh;
+}
+
+header .content-header .titre{
+    margin-bottom: 3vh;
+    font-size: 8vh;
+    font-weight: bold;
+}
+.content-header{
+    font-size: 4vh;
+}
+
+.circle{
+    font-size: 3vh;
+    margin: 0 1vh;
+}
+
+/* Fin header */
+.container-contact{
+    padding: 0 20vh;
+    margin: 0 auto;
+    margin-top: 10vh;
+}
+
+.contact-header{
+    text-align: center;
+}
+.container-contact h2{
+    font-size: 3vh;
+    color: var(--couleur-fond);
+}
+
+.container-contact h1{
+    font-size: 5vh;
+    margin: 1vh 0; 
+}
+/* Ligne separation animée  */
+.animation-ligne {
+    margin: 0 auto;
+    width: 25vh;
+    height: 5px;
+    background-color:var(--couleur-fond)
+}
+  
+.point {
+    width: 10px;
+    height: 5px;
+    margin-left:5px;
+    background-color: white;
+    position: relative;
+    animation-name: example;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+} 
+  
+@keyframes example {
+    0%   {background-color:white; left:0px; top:0px;}
+    25%  {background-color:white; left:22vh; top:0px;}
+    75%  {background-color:white; left:0px; top:0px;}
+    100% {background-color:white; left:0px; top:0px;}
+}
+/* Fin Ligne separation animée  */
+
+
+.contact-info{
+    margin-top: 10vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 5vh
+}
+
+.contact-info button{
+    padding: 1vh 2vh;
+    font-size: 2vh;
+    color: white;
+    background-color: var(--couleur-fond);
+    border: none;
+}
+
+.contact-info .element-contact{
+    display: flex;
+    
+}
+
+.element-contact .info{
+    margin-left: 1vh;
+}
+
+.element-contact p{
+    font-size: 2vh;
+}
+
+.element-contact .info2{
+    color: var(--couleur-fond);
+    font-size: 3vh;
+}
+
+
+/* Debut formulaire de contact  */
+.container-form{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 2vh;
+    margin-top: 10vh;
+}
+
+.left-element{
+    width: 100%;
+}
+
+form{
+    padding: 4vh;
+    background-color: white;
+    box-shadow: 6px 6px 28px  rgb(235, 232, 232);
+    box-sizing: border-box;
+}
+
+input, textarea{
+    width: 100%;
+    padding: 2vh 0;
+    margin-bottom: 4vh;
+    color: var(--couleur-fond);
+}
+
+::placeholder{
+    color: var(--couleur-fond);
+    padding-left: 1vh;
+    
+}
+
+.input-group{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 4vh;
+    width: 100%;
+}
+
+.left-element form button{
+    background-color: var(--couleur-fond);
+    color: white;
+    border: none;
+    border-radius: 1vh;
+    font-size: 18px;
+    width: 100%;
+    padding: 2vh;
+}
+/* Fin formulaire de contact  */
+
+
+.right-element{
+    width: 100%;
+    height: 100%;
+}
+/* Debut map  */
+.right-element #map { 
+    height: 100%; 
+}
+/* Fin map  */
+
+.retour{
+    padding: 0;
+    margin-top: -8vh;
+}
+.retour button{
+    float: right;
+    padding: 2vh;
+    background-color: var(--couleur-fond);
+    border: none;
+    font-size: 3vh;
+}
+
+.retour a{
+    text-decoration: none;
+    color: white;
+}
+
+.sponsors{
+    margin-top: 30vh;
+    padding: 0 20vh;
+}
+
+.image-logo{
+    border: 1px solid yellow;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Image sponsor en scrolle  */
+.sponsors .scroll-container {
+    overflow: auto;
+    white-space: nowrap;
+  }
+  
+.sponsors .scroll-container img {
+    padding: 10px;
+    width: 15vh;
+    height: 8vh;
+  }
+/* Fin mage sponsor en scrolle  */
+
+/* Debut Medias Queries  */
+@media only screen and (max-width:950px) {
+    .container-contact{
+        padding: 0 10vh;
+    }
+    .contact-info{
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 100%;
+    }
+
+    .container-form{
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 100%;
+        padding: 0;
+        /* padding: 0 2vh; */
+
+    }
+
+    .right-element{
+        height: 50vh;
+    }
+
+    .sponsors{
+        padding: 0 10vh;
+    }
+
+    
+    
+}
+
+@media only screen and (max-width: 600px){
+    .container-contact{
+        padding: 0 5vh;
+    }
+    .left-element form{
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 100%;
+    }
+
+    .left-element form .input-group{
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 100%;
+    }
+
+    .sponsors{
+        padding: 0 5vh;
+    }
+   
+}
+/* Fin media queries  */

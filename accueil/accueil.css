@@ -1,3 +1,8 @@
+:root{
+    --couleurbase: #06A3DA;
+    --couleurfond: #EEF9FF;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -8,13 +13,41 @@ body{
     margin: 0 auto;
 }
 header {
-    /* border: 1px solid maroon; */
-    width: 100vh;
     width: 100%;
-    background-image: url(images/banierre-image.png);
-    background-repeat: no-repeat;
+    margin: 0 auto;   
+    height: 90vh; 
+    /* background-image: url(../public/images/image-banierre.jpg); */
+    background-color: #EDEDED;
     background-size: cover;
-    margin: 0 auto;    
+    background-position: center;
+    background-repeat: no-repeat;
+    animation: fondu 30s ease-in-out infinite both;
+}
+
+@keyFrames fondu{
+    0%{background-image: url("../public/images/image-banierre.jpg");}
+    15%{background-image: url("../public/images/banierre2.jpg");}
+    35%{background-image: url("../public/images/banierre3.jpg");}
+    55%{background-image: url("../public/images/banierre4.jpg");}
+    75%{background-image: url("../public/images/banierre5.jpg");}
+    100%{background-image: url("../public/images/image-banierre.jpg");}
+}
+
+header:hover{
+    animation-play-state: paused;
+}
+
+header .menu1{
+    height: 5vh;
+    border: 1px solid blue;
+    margin-bottom: 2vh;
+    background-color: #091E3E;
+    color: white;
+}
+header .menu2{
+    height: 10vh;
+    border: 1px solid blue;
+    margin-bottom: 2vh;
 }
 
 /* Debut banierre  */
@@ -24,13 +57,13 @@ header .banierre{
     grid-template-columns: 5% 90% 5%;
     width: 100%;
     text-align: center;
-    padding: 40vh 0;
+    padding: 10vh 0;
     color: white;
 }
 
 header .banierre .chevron{
-    margin-top: 10vh;
-    font-size: 4vh;
+    margin-top: 17vh;
+    font-size: 5vh;
 }
 
 header .banierre .titre{
@@ -39,7 +72,7 @@ header .banierre .titre{
 }
 
 header .banierre h1{
-    font-size: 6vh;
+    font-size: 13vh;
 }
 
 header .banierre button{
@@ -55,7 +88,7 @@ header .banierre button a{
 }
 
 header .banierre .free{
-    background-color: #06A3DA;
+    background-color: var(--couleurbase);
     
 }
 
@@ -69,7 +102,7 @@ header .banierre .contact{
 .section-accueil-1 .statistic{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    padding: 0 45vh;
+    padding: 0 25vh;
     
     margin: 0 auto;
 }
@@ -77,7 +110,7 @@ header .banierre .contact{
 .section-accueil-1 .statistic .element-statistic{
     display: flex;
     padding: 3vh;
-    background-color: #06A3DA;
+    background-color: var(--couleurbase);
     color: white;
     margin-top: -5vh;
 }
@@ -85,7 +118,7 @@ header .banierre .contact{
 .section-accueil-1 .statistic .element-statistic button{
     padding: 0 2vh;
     background-color: white;
-    color: #06A3DA;
+    color: var(--couleurbase);
     border: none;
 }
 
@@ -99,12 +132,12 @@ header .banierre .contact{
 }
 
 .section-accueil-1 .statistic .middle{
-    background-color: #EEF9FF;
-    color: #06A3DA;
+    background-color: var(--couleurfond);
+    color: var(--couleurbase);
 }
 
 .section-accueil-1 .statistic .middle button{
-    background-color: #06A3DA;
+    background-color: var(--couleurbase);
     color: white;
 }
 
@@ -115,31 +148,56 @@ header .banierre .contact{
 /* Fin statistics  */
 /* Fins Accueil Section 1 */
 
+.section-accueil{
+    margin: 0 auto;
+    padding: 0 20vh;
+}
+.section-accueil h1{
+    text-align: center;
+    font-size: 5vh;
+    margin: 1vh 0; 
+}
+
+.section-accueil h2{
+    text-align: center;
+    font-size: 3vh;
+    color: var(--couleurbase);
+}
+
+
+
+/* Ligne separation animée  */
+.animation-ligne {
+    margin: 0 auto;
+    width: 25vh;
+    height: 5px;
+    background-color:var(--couleurbase)
+  }
+  
+  .point {
+    width: 10px;
+    height: 5px;
+    margin-left:5px;
+    background-color: white;
+    position: relative;
+    animation-name: example;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+  } 
+  
+  @keyframes example {
+    0%   {background-color:white; left:0px; top:0px;}
+    25%  {background-color:white; left:22vh; top:0px;}
+    75%  {background-color:white; left:0px; top:0px;}
+    100% {background-color:white; left:0px; top:0px;}
+  }
+/* Fin ligne separation animée  */
 
 /* Debut section 2 Accueil: Section solution  */
 #section-accueil-solution{
     margin: 0 auto;
     text-align: center;
-    padding: 0 20vh;
-    margin-top: 10vh;
-}
-.section-accueil .ligne-separation {
-    display: flex;
-    justify-content: center;
-}
-
-.section-accueil .ligne-separation hr{
-    border: 2px solid #06A3DA;
-}
-
-.section-accueil .ligne1{
-    width: 5vh;
-    margin-right: 1vh;
-}
-
-.section-accueil .ligne2{
-    width: 10vh;
-    margin-right: 1vh;
+    margin-top: 25vh;
 }
 
 .container-solution{
@@ -152,9 +210,14 @@ header .banierre .contact{
 }
 
 .container-solution .element-solution{
-    background-color: #EEF9FF;
+    background-color: var(--couleurfond);
     border-radius: 1vh;
     padding: 5vh;
+}
+
+.element-solution:hover{
+    transform: scale(1.1);
+    transition: 1s;
 }
 
 .container-solution .element-solution h3 {
@@ -167,7 +230,7 @@ header .banierre .contact{
     transform: rotate(45deg);
     margin-bottom: 3vh;
     color: white;
-    background-color: #06A3DA;
+    background-color: var(--couleurbase);
     border: none;
 }
 
@@ -184,7 +247,7 @@ header .banierre .contact{
 }
 .container-solution .element-solution .second{
     margin-top: 3vh;
-    background-color: #06A3DA;
+    background-color: var(--couleurbase);
 }
 
 
@@ -195,7 +258,7 @@ header .banierre .contact{
 }
 
 .container-solution .active{
-    background-color: #06A3DA;
+    background-color: var(--couleurbase);
     color: white;
 }
 
@@ -212,37 +275,30 @@ header .banierre .contact{
 /* Debut section 2 Accueil: Section pricing  */
 #section-accueil-pricing{
     margin: 0 auto;
-    padding: 0 20vh;
-    margin-top: 10vh;
+    /* padding: 0 20vh; */
+    margin-top: 25vh;
 }
 
-#section-accueil-pricing h1{
-    text-align: center;
-}
 
 .container-pricing{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    /* row-gap: 5vh; */
-    margin: 2vh 0;
-    
+    gap: 5vh;
+    margin: 4vh 0;   
 }
 
 .container-pricing .element-pricing{
-    background-color: #EEF9FF;
-    /* */
+    background-color: var(--couleurfond);
+    border-radius: 1vh;
 }
 
 .container-pricing .element-pricing .title,.content{
     padding: 3vh; 
 }
-/* .container-pricing .element-pricing hr{
-    border: 1px, solid #06A3DA;
-} */
 .element-pricing .title h3 {
     font-size: 3vh;
     margin-bottom: 1vh;
-    color: #06A3DA;
+    color: var(--couleurbase);
 }
 
 
@@ -272,7 +328,7 @@ header .banierre .contact{
 }
 
 .element-pricing .content .fa-check{
-    color: #06A3DA;
+    color: var(--couleurbase);
 }
 
 .element-pricing .content .close{
@@ -282,51 +338,226 @@ header .banierre .contact{
 .element-pricing .content button{
     padding: 2vh 4vh;
     color: white;
-    background-color: #06A3DA;
+    background-color: var(--couleurbase);
     font-size: 2vh;
     border: none;
 }
 
 .container-pricing .standard-plan{
     background-color: white;
-    border: 1px solid white;
-    /* transform: scale(1.2);
-    box-shadow: 12px 2px white;
-     */
+    box-shadow: 6px 6px 28px  rgb(235, 232, 232);    
 }
 
 .container-pricing .element-pricing:hover{
     transform: scale(1.1);
     transition: 1s;
 }
-
-
 /* Fin section 3 Accueil: section princing  */
 
 
-
-
-
-
-
-.element-service:hover{
-    /* border: 1px solid var(--couleurfondmenu); */
+/* Debut section 4 Accueil: Section Client say about Digital services  */
+#section-accueil-digital-service{
+    margin: 0 auto;
+    margin-top: 25vh;
 }
-/* Fin section solution  */
+.container-digital-service{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 5vh;
+    margin: 2vh 0;
+    box-sizing: border-box;
+    
+}
 
-/* Debut accueil section 2  */
+.container-digital-service .element-digital-service{
+    background-color: var(--couleurfond);
+    border-radius: 1vh;
+    
+}
+.container-digital-service .second-client{
+    background-color: white;
+    box-shadow: 6px 6px 28px  rgb(235, 232, 232);    
+}
 
-/* Fin accueil section 2  */
+.container-digital-service .client{
+    display: flex;
+    /* margin-bottom: 3vh; */
+    padding: 2vh 5vh;
+}
+.container-digital-service .para{
+    padding: 2vh 5vh;
+}
+
+
+.container-digital-service .info-client {
+    margin: 0 2vh;
+}
+.container-digital-service .info-client h3{
+    color: var(--couleurbase);
+    font-size: 3vh;
+    margin-bottom: 1vh;
+}
+
+.container-digital-service .client img{
+    width: 9vh;
+    height: 10vh;
+}
+
+/* Pagination  */
+#section-accueil-digital-service .pagination{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5vh;
+}
+
+.pagination hr{
+    border: 5px solid rgb(218, 218, 218);
+    margin-right: 1vh;
+    width: 2vh;
+}
+
+.pagination .page2{
+    border: 5px solid var(--couleurbase);
+    width: 4vh;
+}
+
+
+.container-digital-service .element-digital-service:hover{
+    transform: scale(1.1);
+    transition: 1s;
+}
+/* Fin section 4 Accueil: Section Client say about Digital services  */
+
+
+/* Debut section 5 Accueil: Section stuffs  */
+#section-accueil-stuff{
+    margin: 0 auto;
+    margin-top: 25vh;
+}
+
+
+.container-stuff{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 5vh;
+    margin: 2vh 0;    
+}
+
+.container-stuff .element-stuff{
+    background-color: var(--couleurfond);
+    border-radius: 1vh;
+    
+}
+
+.element-stuff:hover{
+    transform: scale(1.1);
+    transition: 1s;
+}
+
+.element-stuff img{
+    width: 100%;
+    height: 30vh;    
+    border-top-left-radius: 1vh;
+    border-top-right-radius:1vh;
+}
+
+.element-stuff .name-member{
+    text-align: center;
+    padding: 2vh 0;
+}
+
+.element-stuff .name-member h3{
+    color: var(--couleurbase);
+    font-size: 3vh;
+    margin-bottom: 1vh;
+}
+
+/* Fin section 5 Accueil: Section stuffs  */
+
+/* Debut section 6 Accueil: Section Blog  */
+#section-accueil-blog{
+    margin: 0 auto;
+    margin-top: 25vh;
+}
+
+.container-blog{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 5vh;
+    margin: 2vh 0;    
+}
+
+.container-blog .element-blog{
+    background-color: var(--couleurfond);
+    border-radius: 1vh;
+    
+}
+
+.element-blog:hover{
+    transform: scale(1.1);
+    transition: 1s;
+}
+
+.element-blog img{
+    width: 100%;
+    height: 30vh;
+    border-top-left-radius: 1vh;
+    border-top-right-radius:1vh;
+}
+.element-blog button{
+    padding: 1vh 4vh;
+    font-size: 2vh;
+    color: white;
+    background-color: var(--couleurbase);
+    border: none;
+    display: block;
+    position: absolute;
+    margin-top: -25vh;
+}
+
+.element-blog .info{
+    padding: 2vh 3vh;
+}
+
+.element-blog .info .autheur-date{
+    display: flex;
+    margin-bottom: 1vh;
+}
+.element-blog .info .autheur-date .icone{
+    color: var(--couleurbase);
+    margin-right: 1vh;
+}
+
+.element-blog .info .autheur-date .autheur {
+    margin-right: 3vh;
+}
+
+.element-blog .info h3{
+    font-size: 3vh;
+    margin-bottom: 1vh;
+}
+
+.element-blog .info a{
+    display: block;
+    text-decoration: none;
+    margin-top: 1vh;
+    color: var(--couleurbase);
+}
+/* Fin section 6 Accueil: Section Blog  */
+
 
 
 /* Debut Media Queries  */
 /* Media queries  */
 @media only screen and (max-width: 950px){
     header .banierre{
-        /* background-size: 100%; */
-
+        padding: 0;
     }
-
+    .section-accueil{
+        margin: 0 auto;
+        padding: 0 5vh;
+    }
+    
     .section-accueil-1 .statistic{
         display: grid;
         grid-template-columns: 1fr;
@@ -340,18 +571,40 @@ header .banierre .contact{
     .container-solution{
         display: grid;
         grid-template-columns: 1fr 1fr;
-        width: 100%;
+        /* width: 100%; */
     }
 
     .container-pricing{
         display: grid;
         grid-template-columns: 1fr 1fr;
-        width: 100%;
-        gap: 2vh;
+    }
+    .container-digital-service{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        /* width: 100%; */
+    }
+
+    .container-stuff{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        /* width: 100%; */
+    }
+
+    .container-blog{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        /* width: 100%; */
     }
 }
 
 @media only screen and (max-width: 600px){
+    header .banierre h1{
+        font-size: 8vh;
+    }
+    .section-accueil{
+        margin: 0 auto;
+        padding: 0 2vh;
+    }
     
     .container-solution{
         display: grid;
@@ -362,29 +615,26 @@ header .banierre .contact{
     .container-pricing{
         display: grid;
         grid-template-columns: 1fr;
-        width: 100%;
-        gap: 2vh;
+        /* width: 100%; */
+        gap: 5vh;
     }
 
-    /* .card-menu{
+    .container-digital-service{
         display: grid;
         grid-template-columns: 1fr;
-        width: 100%;
-    }
-    
-
-    .container-apropos{
-        display: grid;
-        grid-template-columns: 1fr;
-        width: 100%;
+        /* width: 100%; */
     }
 
-    
-    .container-portfolio{
+    .container-stuff{
         display: grid;
         grid-template-columns: 1fr;
-        width: 100%;
-    } */
+        /* width: 100%; */
+    }
+    .container-blog{
+        display: grid;
+        grid-template-columns: 1fr;
+        /* width: 100%; */
+    }
     
 }
 
