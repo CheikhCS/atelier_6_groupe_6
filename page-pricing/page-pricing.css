@@ -1,0 +1,4 @@
+.container-2emSection{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
