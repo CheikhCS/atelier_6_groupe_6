@@ -1,12 +1,17 @@
 :root{
     --couleurbase: #06A3DA;
     --couleurfond: #EEF9FF;
+    --couleurbar1: #061429;
+    --couleur_blanche: white;
 }
 
 *{
     margin: 0;
     padding: 0;
+    list-style: none;
+    text-decoration: none;
     box-sizing: border-box;
+    font-family: 'Verdana', 'Geneva', 'Tahoma', 'sans-serif';
 }
 body{
     /* border: 1px solid sandybrown; */
@@ -15,8 +20,6 @@ body{
 header {
     width: 100%;
     margin: 0 auto;   
-    height: 90vh; 
-    /* background-image: url(../public/images/image-banierre.jpg); */
     background-color: #EDEDED;
     background-size: cover;
     background-position: center;
@@ -37,18 +40,114 @@ header:hover{
     animation-play-state: paused;
 }
 
-header .menu1{
-    height: 5vh;
-    border: 1px solid blue;
-    margin-bottom: 2vh;
-    background-color: #091E3E;
-    color: white;
+
+
+/*Stylisation top_bar*/
+
+.top_bar 
+{
+    background-color: var(--couleurbar1);
+    color: var(--couleur_blanche);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 100px;
+    width: 100%;
+    height: 7vh;
 }
-header .menu2{
+.top_bar ul{
+    display: flex;
+}
+.top_bar ul li {
+    margin: 0 5px;
+    border: 1px solid var(--couleur_blanche);
+    padding: 10px;
+    border-radius: 25px;
+}
+.top_bar ul li a{
+    color: var(--couleur_blanche);
+}
+
+
+.top-bar-scroll{
+    display: none;
+}
+/*Fin partie top_bar*/
+
+
+/*Debut partie second-bar*/
+.second-bar{
+    width: 100%;
     height: 10vh;
-    border: 1px solid blue;
-    margin-bottom: 2vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 100px;
+    position: fixed;
+    /* background-color: #091323; */
 }
+
+.espace{
+    height: 10vh;
+}
+
+.second-bar .logo a{
+    font-size: 3vh;
+    font-weight: bold;
+    color: #fefefe;
+}
+
+
+.second-bar .logo a:hover{    
+    color: var(--couleurbase);
+}
+
+.hamburger{
+    display: none;
+}
+
+.nav-bar ul{
+    display: flex;
+}
+
+.nav-bar ul li a{
+    display: block;
+    color: #fefefe;
+    font-size: 20px;
+    padding: 20px 10px;
+    transition: 0.2s;
+    margin: 0 5px;
+}
+
+.nav-bar ul li .active-element{
+    color: var(--couleurbase);
+    border-bottom: 1px solid var(--couleurbase);    
+}
+.nav-bar ul li a:hover{
+    color: var(--couleurbase);
+}
+
+
+.nav-bar button{
+    background-color: var(--couleurbase);
+    color: white;
+    font-weight: bold;
+    border: none;
+}
+
+.nav-bar button .pro_version{
+    padding: 18px 10px;
+}
+
+.nav-bar button:hover{
+    background-color: white;
+    color: var(--couleurbase);
+}
+.second-bar-scroll{
+    background-color: #061429;
+}
+
+/* Fin second barre  */
 
 /* Debut banierre  */
 
@@ -549,13 +648,126 @@ header .banierre .contact{
 
 /* Debut Media Queries  */
 /* Media queries  */
+@media only screen and (max-width: 1200px){
+
+    .top_bar{
+        display: none;
+    }
+
+    .hamburger{
+        display: block;
+        cursor: pointer;
+    }
+
+    .hamburger i{
+        font-size: 5vh;
+        color: #fefefe;
+        margin: 6px 0;
+    }
+
+    .second-bar{
+        padding: 0 80px;
+    }
+
+    .nav-bar.active{
+        height: 70vh;
+    }
+    .nav-bar{
+        height: 0;
+        position: absolute;
+        top: 50px;
+        left: 0;
+        right: 0;
+        width: 100vw;
+        overflow: hidden;
+    }
+
+    .nav-bar.active ul{
+        opacity: 1;
+    }
+    .nav-bar ul{
+        display: block;
+        width: fit-content;
+        margin: 80px auto;
+        text-align: center;
+        transition: 0.5s;
+        opacity: 0;
+    }
+
+    .nav-bar ul li .active-element{
+        border: none;
+    }
+    .nav-bar ul li a{
+        margin-bottom: 12px;
+        font-size: 28px;
+    }
+
+    .nav-bar button .pro_version{
+        color: white;
+    }
+
+    header .banierre.active{
+        margin-top: 72vh;
+        padding: 0;
+    }
+
+    
+    header .banierre{
+        padding: 5vh 0;
+    }
+    
+    header .banierre .titre{
+        font-size: 2vh;
+    }
+    
+    header .banierre h1{
+        font-size: 9vh;
+    }
+
+    .section-accueil-1 {
+        margin-top: 15vh;
+    }
+
+}
 @media only screen and (max-width: 950px){
+    
+    .second-bar{
+        padding: 0 50px;
+    }
+
     header .banierre{
         padding: 0;
     }
+
+    
+    header .banierre{
+        padding: 5vh 0;
+    }
+    
+    header .banierre .titre{
+        font-size: 2vh;
+    }
+    
+    header .banierre h1{
+        font-size: 9vh;
+    }
+    
+    .section-accueil-1 {
+        margin-top: 15vh;
+    }
+
     .section-accueil{
         margin: 0 auto;
         padding: 0 5vh;
+    }
+
+    .section-accueil h1{
+        font-size: 3vh;
+    }
+    
+    .section-accueil h2{
+        font-size: 2vh;
+        color: var(--couleurbase);
     }
     
     .section-accueil-1 .statistic{
@@ -598,9 +810,28 @@ header .banierre .contact{
 }
 
 @media only screen and (max-width: 600px){
-    header .banierre h1{
-        font-size: 8vh;
+    .second-bar{
+        padding: 0 30px;
     }
+
+    header .banierre{
+        padding: 0;
+    }
+
+
+    
+    header .banierre{
+        padding: 3vh 0;
+    }
+    
+    
+    header .banierre h1{
+        font-size: 5vh;
+    }
+
+
+
+
     .section-accueil{
         margin: 0 auto;
         padding: 0 2vh;

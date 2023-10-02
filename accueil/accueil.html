@@ -4,14 +4,80 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="accueil.css">
     <title>Page d'accueil</title>
 </head>
 <body>
     <header>
-        <div class="menu1"></div>
-        <div class="menu2"></div>
+        <!-- <div class="menu1"></div>
+        <div class="menu2"></div> -->
+
+        <!--Debut partie top -->
+        
+        <div class="top_bar">
+            <div class="info_contact">
+                <span><i class="fa-solid fa-location-dot"></i> 123 Street, New York, USA</span>&nbsp;
+                <span><i class="fa-solid fa-phone"></i> +012 345 6789</span>&nbsp;
+                <span><i class="fa-solid fa-envelope"></i> info@example.com</span>
+            </div>
+            <ul>
+                <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+            </ul>
+        </div>
+        <!--Fin partie top -->
+
+        <!--Debut partie nav_bar -->
+
+        <div class="second-bar">
+            <div class="logo">
+                <a href="#"><i class="bi bi-person-fill"></i> Startup</a>
+            </div>
+
+            <div class="hamburger">
+                <i class="bi bi-list"></i>
+            </div>
+
+            <nav class="nav-bar">
+                <ul>
+                    <li>
+                        <a href="#" class="active-element">Home</a>                
+                    </li>
+                    <li>
+                        <a href="#">About</a>
+                    </li>
+                    <li>
+                        <a href="#">Services</a>
+                    </li>
+                    <li>
+                        <a href="#">Blog <i class="fa-solid fa-caret-down"></i></a>
+                    </li>
+                    <li>
+                        <a href="#">Pages <i class="fa-solid fa-caret-down"></i></a>
+                    </li>
+                    <li>
+                        <a href="../contact/contact.html">Contact</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa-brands fa-sistrix" style="color: #06A3DA; font-weight: bold;"></i></a>
+                    </li>
+                    <li>
+                        <button><a href="#" class="pro_version">Download Pro Version</a></button>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <hr>
+        <div class="espace"></div>
+        
+        <!--Fin partie nav_bar -->
+
+        <!-- Debut banierre  -->
         <div class="banierre">
             <div class="chevron">
                 <i class="fa-solid fa-chevron-left"></i>
@@ -27,6 +93,7 @@
                 <i class="fa-solid fa-chevron-right"></i>
             </div>   
         </div>
+        <!-- Fin banierre  -->
     </header>
     <main>
         <div class="section-accueil">
@@ -316,5 +383,30 @@
         </div>
     </main>
     <footer></footer>
+    <!-- Script pour faire apparaitre le menu apres clic sur le menu hamburger -->
+    <script>
+        hamburger = document.querySelector(".hamburger");
+        hamburger.onclick = function(){
+            navBar = document.querySelector(".nav-bar");
+            navBar.classList.toggle("active");
+
+            banierre = document.querySelector(".banierre")
+            banierre.classList.toggle("active");
+        }
+
+        // changer l'atat avec apres scroll 
+        navbar1 = document.querySelector(".top_bar")
+        navbar2 = document.querySelector(".second-bar");
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 100){
+                navbar1.classList.add("top-bar-scroll")
+                navbar2.classList.add("second-bar-scroll");
+            }
+
+        })
+
+
+    </script>
 </body>
 </html>

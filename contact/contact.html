@@ -17,8 +17,69 @@
 </head>
 <body>
     <header>
-        <div class="menu1"></div>
-        <div class="menu2"></div>
+        <!--Debut partie top -->
+        
+        <div class="top_bar">
+            <div class="info_contact">
+                <span><i class="fa-solid fa-location-dot"></i> 123 Street, New York, USA</span>&nbsp;
+                <span><i class="fa-solid fa-phone"></i> +012 345 6789</span>&nbsp;
+                <span><i class="fa-solid fa-envelope"></i> info@example.com</span>
+            </div>
+            <ul>
+                <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+            </ul>
+        </div>
+        <!--Fin partie top -->
+
+        <!--Debut partie nav_bar -->
+
+        <div class="second-bar">
+            <div class="logo">
+                <a href="../accueil/accueil.html"><i class="bi bi-person-fill"></i> Startup</a>
+            </div>
+
+            <div class="hamburger">
+                <i class="bi bi-list"></i>
+            </div>
+
+            <nav class="nav-bar">
+                <ul>
+                    <li>
+                        <a href="../accueil/accueil.html" class="active-element">Home</a>                
+                    </li>
+                    <li>
+                        <a href="#">About</a>
+                    </li>
+                    <li>
+                        <a href="#">Services</a>
+                    </li>
+                    <li>
+                        <a href="#">Blog <i class="fa-solid fa-caret-down"></i></a>
+                    </li>
+                    <li>
+                        <a href="#">Pages <i class="fa-solid fa-caret-down"></i></a>
+                    </li>
+                    <li>
+                        <a href="#">Contact</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa-brands fa-sistrix" style="color: #06A3DA; font-weight: bold;"></i></a>
+                    </li>
+                    <li>
+                        <button><a href="#" class="pro_version">Download Pro Version</a></button>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <hr>
+        <div class="espace"></div>
+        
+        <!--Fin partie nav_bar -->
+
         <div class="banierre">
             <div class="content-header">
                 <p class="titre">Contact Us</p>
@@ -100,6 +161,31 @@
     </main>
 
     <script src="scriptmap.js"></script>
+    <script>
+        // Script pour faire apparaitre le menu apres clic sur le menu hamburger
+        hamburger = document.querySelector(".hamburger");
+        hamburger.onclick = function(){
+            navBar = document.querySelector(".nav-bar");
+            navBar.classList.toggle("active");
+
+            banierre = document.querySelector(".banierre")
+            banierre.classList.toggle("active");
+        }
+
+        // changer l'atat avec apres scroll 
+        navbar1 = document.querySelector(".top_bar")
+        navbar2 = document.querySelector(".second-bar");
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 100){
+                navbar1.classList.add("top-bar-scroll")
+                navbar2.classList.add("second-bar-scroll");
+            }
+
+        })
+
+
+    </script>
     <footer></footer>
 </body>
 </html>
