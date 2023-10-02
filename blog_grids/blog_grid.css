@@ -15,12 +15,12 @@
 }
 
 
-/* *******************Designe blog grig************************************** */
+/* *******************Designe blog grid left************************************** */
 
 
 .blog-flexible{
     display: grid;
-    grid-template-columns: 80% 20%;
+    grid-template-columns: 78% 20% 2%;
     gap: 30px;
     
 
@@ -225,6 +225,18 @@
     display: flex;
     justify-content: center;
 }
+.team-left{
+    margin-top: 600px;
+    color: white;
+    background-color: var(--blue-foncee);
+    width: 50px;
+    height: 40px;
+    display: flex;
+    /* place-content: center; */
+    justify-content: center;
+    align-items: center;
+}
+
 
 
 
