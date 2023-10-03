@@ -7,13 +7,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="accueil.css">
+    <link rel="stylesheet" href="../public/header-footer.css">
     <title>Page d'accueil</title>
 </head>
 <body>
     <header>
-        <!-- <div class="menu1"></div>
-        <div class="menu2"></div> -->
-
         <!--Debut partie top -->
         
         <div class="top_bar">
@@ -46,19 +44,19 @@
             <nav class="nav-bar">
                 <ul>
                     <li>
-                        <a href="#" class="active-element">Home</a>                
+                        <a href="../accueil/accueil.html" class="active-element">Home</a>                
                     </li>
                     <li>
-                        <a href="#">About</a>
+                        <a href="../about/page-about-us.html">About</a>
                     </li>
                     <li>
-                        <a href="#">Services</a>
+                        <a href="../service/service.html">Services</a>
                     </li>
                     <li>
-                        <a href="#">Blog <i class="fa-solid fa-caret-down"></i></a>
+                        <a href="../blog_grids/blog_grid.html">Blog <i class="fa-solid fa-caret-down"></i></a>
                     </li>
                     <li>
-                        <a href="#">Pages <i class="fa-solid fa-caret-down"></i></a>
+                        <a href="../pricing/pricing.html">Pages <i class="fa-solid fa-caret-down"></i></a>
                     </li>
                     <li>
                         <a href="../contact/contact.html">Contact</a>
@@ -72,8 +70,8 @@
                 </ul>
             </nav>
         </div>
-        <hr>
         <div class="espace"></div>
+        <hr>
         
         <!--Fin partie nav_bar -->
 
@@ -383,30 +381,7 @@
         </div>
     </main>
     <footer></footer>
-    <!-- Script pour faire apparaitre le menu apres clic sur le menu hamburger -->
-    <script>
-        hamburger = document.querySelector(".hamburger");
-        hamburger.onclick = function(){
-            navBar = document.querySelector(".nav-bar");
-            navBar.classList.toggle("active");
-
-            banierre = document.querySelector(".banierre")
-            banierre.classList.toggle("active");
-        }
-
-        // changer l'atat avec apres scroll 
-        navbar1 = document.querySelector(".top_bar")
-        navbar2 = document.querySelector(".second-bar");
-
-        window.addEventListener('scroll', () => {
-            if (window.scrollY > 100){
-                navbar1.classList.add("top-bar-scroll")
-                navbar2.classList.add("second-bar-scroll");
-            }
-
-        })
-
-
-    </script>
+    <script src="../public/script-all.js"></script>
+    
 </body>
 </html>

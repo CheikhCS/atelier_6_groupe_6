@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
     integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
     crossorigin=""/>
@@ -12,9 +13,12 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="../contact/contact.css">
     <link rel="stylesheet" href="../public/header-footer.css">
-    <title>Contact</title>
+
+    <link rel="stylesheet" href="page-about-us.css">
+    
+    <title>About US</title>
 </head>
 <body>
     <header>
@@ -53,7 +57,7 @@
                         <a href="../accueil/accueil.html">Home</a>                
                     </li>
                     <li>
-                        <a href="../about/page-about-us.html">About</a>
+                        <a href="../about/page-about-us.html" class="active-element">About</a>
                     </li>
                     <li>
                         <a href="../service/service.html">Services</a>
@@ -65,7 +69,7 @@
                         <a href="../pricing/pricing.html">Pages <i class="fa-solid fa-caret-down"></i></a>
                     </li>
                     <li>
-                        <a href="../contact/contact.html" class="active-element">Contact</a>
+                        <a href="../contact/contact.html">Contact</a>
                     </li>
                     <li>
                         <a href="#"><i class="fa-brands fa-sistrix" style="color: #06A3DA; font-weight: bold;"></i></a>
@@ -83,70 +87,53 @@
 
         <div class="banierre">
             <div class="content-header">
-                <p class="titre">Contact Us</p>
-                <p class="home-contact">Home <i class="bi bi-circle circle"></i> Contact</p>
+                <p class="titre">About Us</p>
+                <p class="home-contact">Home <i class="bi bi-circle circle"></i> About</p>
             </div>
         </div>
     </header>
     <main>
-        <div class="container-contact">
-            <div class="contact-header">
-                <h2>CONTACT US</h2>
-                <h1>If Your Have Any Query, Fell <br>Free To Contact Us </h1>
-                <div class="animation-ligne">
-                    <div class="point"></div>
-                </div>
-            </div>
-
-            <div class="contact-info">
-                <div class="element-contact">
-                    <button><i class="bi bi-telephone-fill"></i></button>                 
-                    <div class="info">
-                        <p>Call to ask any question</p>
-                        <p class="info2">+012 345 6789</p>
-                    </div>
-                </div>
-                <div class="element-contact">
-                    <button><i class="bi bi-envelope-open-fill"></i></button>
-                    <div class="info">
-                        <p>Email to get free quote</p>
-                        <p class="info2">info@example.com</p>
-                    </div>
-                </div>
-                <div class="element-contact">
-                    <button><i class="bi bi-geo-alt-fill"></i></button>               
-                    <div class="info">
-                        <p>Visit our office</p>
-                        <p class="info2">123 Street, NY, USA</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="container-form">
-                <div class="left-element">
-                    <form action="">
-                        <div class="input-group">
-                            <input type="text" placeholder="Your Name" required class="input-name">
-                            <input type="email" placeholder="Your Mail" required class="input-mail">
-
+        <div class="pageAboutUs">
+            <div class="divMain">
+                <div class="divtxtM">
+                    <h3>
+                        About us
+                    </h3>
+                    <h1>
+                        The Best IT Solution With 10 Years of <br> Experience
+                    </h1>
+                    <hr>
+                    <br>
+                    <p id="colgris">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta optio ex dolores libero inventore aliquam veniam deserunt ea. Dolor minima doloremque distinctio? Earum placeat aliquam, voluptatem voluptates magni fugit vitae.
+                    </p>
+                    <div class="txtWicon">
+                        <div class="txtWiconleft">
+                            <p><i class="bi bi-check"></i> Award Winnig</p>
+                            <p><i class="bi bi-check"></i> Professional Staff &nbsp;</p>
                         </div>
-                        <input type="text" placeholder="Subject" required>
-                        <textarea name="Message" id="" cols="10" rows="10" placeholder="Message"></textarea>
-                        <button type="submit">Send message</button>
-                    </form>
-                    
+                        <div class="txtWiconRigh">    
+                            <p><i class="bi bi-check"></i> 24/7 Support</p>
+                            <p><i class="bi bi-check"></i> Fair Prices</p>
+                        </div>
+                    </div>
+                    <div class="divbtncall">
+                        <div class="divCall">
+                            <i class="bi bi-telephone-fill"></i>
+                        </div>
+                        <div class="divcalltext">
+                            <p> Call to ask any question <br>
+                            <span>+012 345 06789</span></p>
+                        </div>
+                    </div>
+                    <button class="btnPaus">Request A Quote</button>
+        
                 </div>
-                <div class="right-element">
-                    <div id="map"></div>
-                    
+                <div class="imgLEFT">
+                    <img src="https://media.istockphoto.com/id/1457297928/photo/successful-meeting-of-female-and-male-crypto-experts.jpg?s=612x612&w=0&k=20&c=12O02QvmSesh806PkJ4HpRS6s82C4BbfyTwRjo23psg=" alt="">
                 </div>
-            </div>            
+            </div>
         </div>
-
-        <div class="retour">
-            <button><a href="#" class="link"><i class="bi bi-arrow-up"></i></a></button> 
-        </div>
-
         <div class="sponsors">
             <div class="image-logo scroll-container">
                 <img src="https://demo.htmlcodex.com/1858/startup-website-template/img/vendor-9.jpg" alt="International hearts">
@@ -159,10 +146,10 @@
                 <img src="https://demo.htmlcodex.com/1858/startup-website-template/img/vendor-7.jpg" alt="Brand" class="logo">
             </div>
         </div>
-    </main>
 
-        <!--Section footer-->
-        <footer>
+    </main>
+    <!--Section footer-->
+    <footer>
             <div class="footer_container">
                 <div class="container">
                     <div class="item_footer startup">
@@ -221,39 +208,15 @@
                     </p>
                 </div>
             </div>
-        </footer>
+    </footer>
 
-    <script src="scriptmap.js"></script>
     <script src="../public/script-all.js"></script>
-    <!-- <script>
-        // Script pour faire apparaitre le menu apres clic sur le menu hamburger
-        hamburger = document.querySelector(".hamburger");
-        hamburger.onclick = function(){
-            navBar = document.querySelector(".nav-bar");
-            navBar.classList.toggle("active");
-
-            banierre = document.querySelector(".banierre")
-            banierre.classList.toggle("active");
-        }
-
-        // changer l'atat avec apres scroll 
-        navbar1 = document.querySelector(".top_bar")
-        navbar2 = document.querySelector(".second-bar");
-
-        window.addEventListener('scroll', () => {
-            if (window.scrollY > 500){
-                navbar1.classList.add("top-bar-scroll")
-                navbar2.classList.add("second-bar-scroll");
-            }
-
-            else{
-                navbar1.classList.remove("top-bar-scroll")
-                navbar2.classList.remove("second-bar-scroll");
-            }
-
-        })
-
-
-    </script> -->
+    <!-- <div class="divtitrAU">
+        <h2>
+            About Us
+        </h2>
+        <span> Home About</span>
+    </div> -->
+    
 </body>
 </html>

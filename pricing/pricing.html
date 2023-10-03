@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="pricing.css">
+    
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+    crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+    crossorigin=""></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../contact/contact.css">
+    <link rel="stylesheet" href="../public/header-footer.css">
+
+    <title>Page-Pricing</title>
+</head>
+<body>
+    <header>
+        <!--Debut partie top -->
+        
+        <div class="top_bar">
+            <div class="info_contact">
+                <span><i class="fa-solid fa-location-dot"></i> 123 Street, New York, USA</span>&nbsp;
+                <span><i class="fa-solid fa-phone"></i> +012 345 6789</span>&nbsp;
+                <span><i class="fa-solid fa-envelope"></i> info@example.com</span>
+            </div>
+            <ul>
+                <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+            </ul>
+        </div>
+        <!--Fin partie top -->
+
+        <!--Debut partie nav_bar -->
+
+        <div class="second-bar">
+            <div class="logo">
+                <a href="../accueil/accueil.html"><i class="bi bi-person-fill"></i> Startup</a>
+            </div>
+
+            <div class="hamburger">
+                <i class="bi bi-list"></i>
+            </div>
+
+            <nav class="nav-bar">
+                <ul>
+                    <li>
+                        <a href="../accueil/accueil.html">Home</a>                
+                    </li>
+                    <li>
+                        <a href="../about/page-about-us.html">About</a>
+                    </li>
+                    <li>
+                        <a href="../service/service.html">Services</a>
+                    </li>
+                    <li>
+                        <a href="../blog_grids/blog_grid.html">Blog <i class="fa-solid fa-caret-down"></i></a>
+                    </li>
+                    <li>
+                        <a href="../pricing/pricing.html" class="active-element">Pages <i class="fa-solid fa-caret-down"></i></a>
+                    </li>
+                    <li>
+                        <a href="../contact/contact.html">Contact</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa-brands fa-sistrix" style="color: #06A3DA; font-weight: bold;"></i></a>
+                    </li>
+                    <li>
+                        <button><a href="#" class="pro_version">Download Pro Version</a></button>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="espace"></div>
+        <hr>
+        
+        <!--Fin partie nav_bar -->
+
+        <div class="banierre">
+            <div class="content-header">
+                <p class="titre">Pricing</p>
+                <p class="home-contact">Home <i class="bi bi-circle circle"></i> Pricing</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- Debut section 3 Accueil: Section Pricing  -->
+    <div id="section-accueil-pricing">
+        <h1>We are Offering Competitive <br>Prices for Our Clients</h1>
+        <div class="ligne-separation">
+            <hr class="ligne1"> 
+            <hr class="ligne2">
+        </div>
+        <div class="container-pricing">
+            <div class="element-pricing">
+                <div class="title">
+                    <h3>Basic plan</h3>
+                    <p>FOR SMALL SIZE BUSINESS</p>
+                </div>
+                <hr>
+                <div class="content">
+                    <h2><span class="dollars">$</span><span class="price">49.00</span> <span class="month">/Month</span></h2>   
+                    <p><span class="course">HTML & CSS3</span><span class="icone-check"><i class="fa-solid fa-check"></i></span></p>
+                    <p><span class="course">Bootstrap v5</span><span class="icone-check"><i class="fa-solid fa-check"></i></span></p>
+                    <p><span class="course">Responsive Layout</span><span class="icone-check"><i class="fa-solid fa-xmark close"></i></span></p>
+                    <p><span class="course">Cross-browser support</span><span class="icone-check"><i class="fa-solid fa-xmark close"></i></span></p>
+                    <button>Order Now</button>
+                </div>
+            </div>
+            <div class="element-pricing standard-plan">
+                <div class="title">
+                    <h3>Standard plan</h3>
+                    <p>FOR MEDIUM SIZE BUSINESS</p>
+                </div>
+                <hr>
+                <div class="content">
+                    <h2><span class="dollars">$</span><span class="price">99.00</span> <span class="month">/Month</span></h2>   
+                    <p><span class="course">HTML & CSS3</span><span class="icone-check"><i class="fa-solid fa-check"></i></span></p>
+                    <p><span class="course">Bootstrap v5</span><span class="icone-check"><i class="fa-solid fa-check"></i></span></p>
+                    <p><span class="course">Responsive Layout</span><span class="icone-check"><i class="fa-solid fa-check"></i></span></p>
+                    <p><span class="course">Cross-browser support</span><span class="icone-check"><i class="fa-solid fa-xmark close"></i></span></p>
+                    <button>Order Now</button>
+                </div>
+            </div>
+            <div class="element-pricing">
+                <div class="title">
+                    <h3>Advanced plan</h3>
+                    <p>FOR MEDIUM SIZE BUSINESS</p>
+                </div>
+                <hr>
+                <div class="content">
+                    <h2><span class="dollars">$</span><span class="price">149.00</span> <span class="month">/Month</span></h2>   
+                    <p><span class="course">HTML & CSS3</span><span class="icone-check"><i class="fa-solid fa-check"></i></span></p>
+                    <p><span class="course">Bootstrap v5</span><span class="icone-check"><i class="fa-solid fa-check"></i></span></p>
+                    <p><span class="course">Responsive Layout</span><span class="icone-check"><i class="fa-solid fa-check"></i></span></p>
+                    <p><span class="course">Cross-browser support</span><span class="icone-check"><i class="fa-solid fa-check"></i></span></p>
+                    <button>Order Now</button>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <!-- Fin section 3 Accueil: Section Pricing  -->
+    
+        <!--  Debut section request & formulaire -->
+    <div class="conteneur-request">
+            <section class="sectionRequest">
+                <h4>REQUEST A QUOTE</h4>
+                <h1>Need A Free Quote? Please Feel Free <br> to Contact Us</h1>
+                <div class="ligne-separation">
+                    <hr class="ligne1"> 
+                    <hr class="ligne2">
+                </div>
+                <div class="textWicon">
+                    <p><i class="bi bi-reply-fill"></i>  Reply within 24hours &nbsp;</p>
+                    <p><i class="bi bi-telephone-fill"></i>  24hrs telephone support</p>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur nobis, aperiam quidem enim labore vero, quaerat nisi quis facilis ducimus officiis, libero repellat incidunt magnam impedit. Deserunt, qui illum! Atque?</p>
+                <div class="divbtncall">
+                    <div class="divCall">
+                    <i class="bi bi-telephone-fill"></i>
+                    </div>
+                    <div class="divcalltext">
+                        <p> Call to ask any question <br>
+                        <span>+012 345 06789</span></p>
+                    </div>
+                </div>
+            </section>
+            <section class="sectionForm">
+                <div class="divform">
+                    <form id="contact-form" action="votre-script-de-traitement.php" method="POST">
+                        <label for="nom"></label>
+                        <input type="text" id="nom" placeholder="  Your Name" name="" required>
+                        <br>
+    
+                        <label for="email"></label>
+                        <input type="email" id="email" placeholder="  Your Email"  name="email" required>
+                        <br>
+    
+                        <select class="select-box-service" >
+                            <option value="Services">Select a Sercices </option>
+                            <option value="service1">Service1</option>
+                            <option value="Services2">Service2</option>
+                            <option value="Service3">Service3</option>
+                            &nbsp;
+                        </select>
+                        <br>
+    
+                        <label for="message"></label>
+                        <textarea id="message" name="message" placeholder="Message" required></textarea>
+                        <br>
+                
+                        <button class="submit">Request a Quote</button>
+                    </form>
+                </div>
+            </section>
+    </div>
+
+    <div class="sponsors">
+        <div class="image-logo scroll-container">
+            <img src="https://demo.htmlcodex.com/1858/startup-website-template/img/vendor-9.jpg" alt="International hearts">
+            <img src="https://demo.htmlcodex.com/1858/startup-website-template/img/vendor-1.jpg" alt="publisher" class="logo">
+            <img src="https://demo.htmlcodex.com/1858/startup-website-template/img/vendor-2.jpg" alt="logo" class="logo">
+            <img src="https://demo.htmlcodex.com/1858/startup-website-template/img/vendor-3.jpg" alt="samsung" class="logo">
+            <img src="https://demo.htmlcodex.com/1858/startup-website-template/img/vendor-4.jpg" alt="soundwave" class="logo">
+            <img src="https://demo.htmlcodex.com/1858/startup-website-template/img/vendor-5.jpg" alt="Sample Company" class="logo">
+            <img src="https://demo.htmlcodex.com/1858/startup-website-template/img/vendor-6.jpg" alt="Company" class="logo">
+            <img src="https://demo.htmlcodex.com/1858/startup-website-template/img/vendor-7.jpg" alt="Brand" class="logo">
+        </div>
+    </div>
+    <!-- Fin section 2 Service: section solution  -->
+    <!--Section footer-->
+    <footer>
+        <div class="footer_container">
+            <div class="container">
+                <div class="item_footer startup">
+                    <h2><i class="fa-brands fa-square-behance"></i>&nbsp; Startup</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Deleniti veritatis culpa laudantium ratione atque neque 
+                        quaerat dicta excepturi dolorem omnis ipsa quisquam similique
+                        quas dignissimos exercitationem sint, laboriosam corporis eius?
+                    </p>
+                    <form action="">
+                        <input type="email" placeholder="Email" class="address_mail" required>
+                        <button type="submit" class="submit_button"> Sing Up</button>
+                    </form>
+                    
+                </div>
+                <div class="item_footer liens">
+                    <h3>Get In Touch</h3>
+                    <ul>
+                        <li><i class="fa-solid fa-location-dot"></i> 123 Street, New York, USA</li>
+                        <li><i class="fa-solid fa-phone"></i> +012 345 6789</li>
+                        <li><i class="fa-solid fa-envelope"></i> info@example.com</li>
+                    </ul>
+                </div>
+                <div class="item_footer liens">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="../accueil/accueil.html"><i class="fa-solid fa-arrow-right icon_arrow"></i>&nbsp;Home</a></li>
+                        <li><a href="../about/page-about-us.html"><i class="fa-solid fa-arrow-right icon_arrow"></i>&nbsp;About Us</a></li>
+                        <li><a href="../service/service.html"><i class="fa-solid fa-arrow-right icon_arrow"></i>&nbsp;Our Services</a></li>
+                        <li><a href="../team/team.html"><i class="fa-solid fa-arrow-right icon_arrow"></i>&nbsp;Meet The Team</a></li>
+                        <li><a href="../blog_grids/blog_grid.html"><i class="fa-solid fa-arrow-right icon_arrow"></i>&nbsp;Latest Blog</a></li>
+                        <li><a href="../contact/contact.html"><i class="fa-solid fa-arrow-right icon_arrow"></i>&nbsp;Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="item_footer liens">
+                    <h3>Popular Links</h3>
+                    <ul>
+                        <li><a href="../accueil/accueil.html"><i class="fa-solid fa-arrow-right icon_arrow"></i>&nbsp;Home</a></li>
+                        <li><a href="../about/page-about-us.html"><i class="fa-solid fa-arrow-right icon_arrow"></i>&nbsp;About Us</a></li>
+                        <li><a href="../service/service.html"><i class="fa-solid fa-arrow-right icon_arrow"></i>&nbsp;Our Services</a></li>
+                        <li><a href="../team/team.html"><i class="fa-solid fa-arrow-right icon_arrow"></i>&nbsp;Meet The Team</a></li>
+                        <li><a href="../blog_grids/blog_grid.html"><i class="fa-solid fa-arrow-right icon_arrow"></i>&nbsp;Latest Blog</a></li>
+                        <li><a href="../contact/contact.html"><i class="fa-solid fa-arrow-right icon_arrow"></i>&nbsp;Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+        </div>
+        <div class="second-section-footer">
+            <div class="grid-element first-element"></div>
+            <div class="grid-element banniere_footer">
+                <p>
+                    &copy; <a href="#">Your Site Name</a>. All Rights Reserved. Designed By
+                    <a href="#">HTML Codex</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../public/script-all.js"></script>
+        
+    
+    
+    <script src="pricing.js"></script>
+</body>
+</html>

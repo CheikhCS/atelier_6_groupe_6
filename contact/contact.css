@@ -2,6 +2,8 @@
     --couleurbase: #06A3DA;
     --couleurfond: #EEF9FF;
     --couleurbar1: #061429;
+    --couleur_footer: #091E3E;
+    --couleur_banniere: #061429;
     --couleur_blanche: white;
 }
 
@@ -24,120 +26,13 @@ header {
     /* height: 50vh;   */
 }
 
-/*Stylisation top_bar*/
 
-.top_bar 
-{
-    background-color: var(--couleurbar1);
-    color: var(--couleur_blanche);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 100px;
-    width: 100%;
-    height: 7vh;
-}
-.top_bar ul{
-    display: flex;
-}
-.top_bar ul li {
-    margin: 0 5px;
-    border: 1px solid var(--couleur_blanche);
-    padding: 10px;
-    border-radius: 25px;
-}
-.top_bar ul li a{
-    color: var(--couleur_blanche);
-}
-
-
-.top-bar-scroll{
-    display: none;
-}
-/*Fin partie top_bar*/
-
-
-/*Debut partie second-bar*/
-.second-bar{
-    width: 100%;
-    height: 10vh;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 100px;
-    position: fixed;
-    /* background-color: #091323; */
-}
-
-.espace{
-    height: 10vh;
-}
-
-.second-bar .logo a{
-    font-size: 3vh;
-    font-weight: bold;
-    color: #fefefe;
-}
-
-
-.second-bar .logo a:hover{    
-    color: var(--couleurbase);
-}
-
-.hamburger{
-    display: none;
-}
-
-.nav-bar ul{
-    display: flex;
-}
-
-.nav-bar ul li a{
-    display: block;
-    color: #fefefe;
-    font-size: 20px;
-    padding: 20px 10px;
-    transition: 0.2s;
-    margin: 0 5px;
-}
-
-.nav-bar ul li .active-element{
-    color: var(--couleurbase);
-    border-bottom: 1px solid var(--couleurbase);    
-}
-.nav-bar ul li a:hover{
-    color: var(--couleurbase);
-}
-
-
-.nav-bar button{
-    background-color: var(--couleurbase);
-    color: white;
-    font-weight: bold;
-    border: none;
-}
-
-.nav-bar button .pro_version{
-    padding: 18px 10px;
-}
-
-.nav-bar button:hover{
-    background-color: white;
-    color: var(--couleurbase);
-}
-.second-bar-scroll{
-    background-color: #061429;
-}
-
-/* Fin second barre  */
-
-
-/* Debut banierre  */
 
 .content-header{
     text-align: center;
     color: white;
     margin-top: 8vh;
+    padding-bottom: 5vh;
 }
 
 header .content-header .titre{
@@ -247,14 +142,14 @@ header .content-header .titre{
     width: 100%;
 }
 
-form{
+.container-form form{
     padding: 4vh;
     background-color: white;
     box-shadow: 6px 6px 28px  rgb(235, 232, 232);
     box-sizing: border-box;
 }
 
-input, textarea{
+.container-form input, textarea{
     width: 100%;
     padding: 2vh 0;
     margin-bottom: 4vh;
@@ -289,10 +184,12 @@ input, textarea{
 .right-element{
     width: 100%;
     height: 100%;
+    
 }
 /* Debut map  */
 .right-element #map { 
     height: 100%; 
+    z-index: -1;
 }
 /* Fin map  */
 
@@ -337,85 +234,7 @@ input, textarea{
   }
 /* Fin mage sponsor en scrolle  */
 
-/* Debut Medias Queries  */
-@media only screen and (max-width: 1200px){
 
-    .top_bar{
-        display: none;
-    }
-
-    .hamburger{
-        display: block;
-        cursor: pointer;
-    }
-
-    .hamburger i{
-        font-size: 5vh;
-        color: #fefefe;
-        margin: 6px 0;
-    }
-
-    .second-bar{
-        padding: 0 80px;
-    }
-
-    .nav-bar.active{
-        height: 70vh;
-    }
-    .nav-bar{
-        height: 0;
-        position: absolute;
-        top: 50px;
-        left: 0;
-        right: 0;
-        width: 100vw;
-        overflow: hidden;
-    }
-
-    .nav-bar.active ul{
-        opacity: 1;
-    }
-    .nav-bar ul{
-        display: block;
-        width: fit-content;
-        margin: 80px auto;
-        text-align: center;
-        transition: 0.5s;
-        opacity: 0;
-    }
-
-    .nav-bar ul li .active-element{
-        border: none;
-    }
-    .nav-bar ul li a{
-        margin-bottom: 12px;
-        font-size: 28px;
-    }
-
-    .nav-bar button .pro_version{
-        color: white;
-    }
-
-    header .banierre.active{
-        margin-top: 72vh;
-        padding: 0;
-    }
-
-    
-    header .banierre{
-        padding: 5vh 0;
-    }
-    
-    header .banierre .titre{
-        font-size: 2vh;
-    }
-    
-    header .banierre h1{
-        font-size: 9vh;
-    }
-
-
-}
 
 @media only screen and (max-width:950px) {
     .container-contact{
