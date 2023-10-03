@@ -1,0 +1,111 @@
+
+
+
+.pageAboutUS {
+    font-family: verdana;
+    /* width: 80%; */
+    margin: 0 auto;
+    /* padding: 0; */
+    box-sizing: border-box;
+}
+
+/* .divtitrAU{
+
+} */
+
+.divMain{
+    margin-top: 10vh;
+    display: flex;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    /* display: grid; */
+}
+.divtxtM{
+    width: 50%;
+}
+.divtxtM h1{
+    color: #091E3E;
+}
+.divtxtM h3{
+    color: #06A3DA;
+}
+.divtxtM hr{
+    float: left;
+    background-color: #06A3DA;
+    /* text-align: center; */
+    width: 70px;
+    height: 2px;
+}
+#colgris{
+    color: grey;
+    font-size: medium;
+}
+.txtWicon{
+    display: flex;
+
+}
+
+.txtWiconRigh p{
+    color: grey;
+}
+
+.txtWiconleft{
+    color: grey;
+}
+.bi-check{
+color: #06A3DA;
+}
+.divbtncall{
+    display: flex;
+    align-items: center;
+    margin: 5px;
+    padding: 5px;
+}
+
+.divCall{
+    background-color: #06A3DA;
+    width: 5%;
+    height: 100%;
+    text-align: center;
+}
+
+.bi-telephone-fill{
+    color: #ffffff;
+}
+.divcalltext p{
+    float: right;
+    margin: 5px;
+    padding: 8px;
+}
+
+.divcalltext span{
+    color: #06A3DA;
+    font-size: smaller;
+}
+
+.btnPaus{
+    border: none;
+    background-color: #06A3DA;
+    color: #ffffff;
+    border-radius: 5%;
+    width: 150px;
+    /* padding-left: 10px; */
+    margin-left: 25px;
+}
+.imgLEFT{
+    width: 40%;
+}
+.imgLEFT img{
+    width: 100%;
+}
+
+/* la responsivité */
+@media (max-width=768px) {
+    .divMain{
+        /* flex-wrap: wrap; */
+        /* display: flex; */
+        grid-template-columns: 1fr;
+        justify-content: center;
+    }
+}
+

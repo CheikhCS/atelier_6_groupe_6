@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        #menu, #menu ul {
+    padding:0;
+    margin:0;
+    list-style: none;
+    width:200px;
+}
+#menu li {
+    position:relative;
+    background: #333;
+}
+#menu ul, #menu li:hover ul ul {
+    position: absolute;
+    left:-999em;
+    top:0
+}
+#menu li:hover ul, #menu li li:hover ul {
+    left:200px;
+}
+#menu li:hover {
+    background: #999
+}
+#menu a {
+    display:block;
+    text-decoration: none;
+    padding:8px;
+    color:#fff
+}
+#menu li:hover li a, #menu li li:hover li a {
+    color:#fff;
+}
+#menu li:hover a, #menu li li:hover a, #menu li li li:hover a {
+    color:#333;
+}
+    </style>
+</head>
+<body>
+    <ul id="menu">
+        <li><a href="">lien menu</a>
+            <ul>
+                <li><a href="">Lien sous menu</a>
+                    <ul>
+                        <li><a href="">Lien sou sous menu</a></li>
+                        <li><a href="">Lien sou sous menu</a></li>
+                        <li><a href="">Lien sou sous menu</a></li>
+                    </ul>
+                </li>
+                <li><a href="">Lien sous menu</a>
+                    <ul>
+                        <li><a href="">Lien sou sous menu</a></li>
+                        <li><a href="">Lien sou sous menu</a></li>
+                        <li><a href="">Lien sou sous menu</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li><a href="">lien menu</a>
+            <ul>
+                <li><a href="">Lien sous menu</a>
+                    <ul>
+                        <li><a href="">Lien sou sous menu</a></li>
+                        <li><a href="">Lien sou sous menu</a></li>
+                        <li><a href="">Lien sou sous menu</a></li>
+                    </ul>
+                </li>
+                <li><a href="">Lien sous menu</a>
+                    <ul>
+                        <li><a href="">Lien sou sous menu</a></li>
+                        <li><a href="">Lien sou sous menu</a></li>
+                        <li><a href="">Lien sou sous menu</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+    </ul>
+</body>
+</html>

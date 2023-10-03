@@ -1,0 +1,880 @@
+:root{
+    --couleurbase: #06A3DA;
+    --couleurfond: #EEF9FF;
+    --couleurbar1: #061429;
+    --couleur_blanche: white;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'Verdana', 'Geneva', 'Tahoma', 'sans-serif';
+}
+body{
+    /* border: 1px solid sandybrown; */
+    margin: 0 auto;
+}
+header {
+    width: 100%;
+    margin: 0 auto;   
+    background-color: #EDEDED;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    animation: fondu 30s ease-in-out infinite both;
+}
+
+@keyFrames fondu{
+    0%{background-image: url("../public/images/image-banierre.jpg");}
+    15%{background-image: url("../public/images/accueil/banierre2.jpg");}
+    35%{background-image: url("../public/images/accueil/banierre3.jpg");}
+    55%{background-image: url("../public/images/accueil/banierre4.jpg");}
+    75%{background-image: url("../public/images/accueil/banierre5.jpg");}
+    100%{background-image: url("../public/images/accueil/image-banierre.jpg");}
+}
+
+header:hover{
+    animation-play-state: paused;
+}
+
+
+
+/*Stylisation top_bar*/
+
+/* .top_bar 
+{
+    background-color: var(--couleurbar1);
+    color: var(--couleur_blanche);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 100px;
+    width: 100%;
+    height: 7vh;
+}
+.top_bar ul{
+    display: flex;
+}
+.top_bar ul li {
+    margin: 0 5px;
+    border: 1px solid var(--couleur_blanche);
+    padding: 10px;
+    border-radius: 25px;
+}
+.top_bar ul li a{
+    color: var(--couleur_blanche);
+}
+
+
+.top-bar-scroll{
+    display: none;
+} */
+/*Fin partie top_bar*/
+
+
+/*Debut partie second-bar*/
+/* .second-bar{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 100px;
+    position: fixed;
+}
+
+.espace{
+    height: 10vh;
+}
+
+.second-bar .logo a{
+    font-size: 3vh;
+    font-weight: bold;
+    color: #fefefe;
+}
+
+
+.second-bar .logo a:hover{    
+    color: var(--couleurbase);
+}
+
+.hamburger{
+    display: none;
+}
+
+.nav-bar ul{
+    display: flex;
+}
+
+.nav-bar ul li a{
+    display: block;
+    color: #fefefe;
+    font-size: 20px;
+    padding: 20px 10px;
+    transition: 0.2s;
+    margin: 0 5px;
+}
+
+.nav-bar ul li .active-element{
+    color: var(--couleurbase);
+    border-bottom: 1px solid var(--couleurbase);    
+}
+.nav-bar ul li a:hover{
+    color: var(--couleurbase);
+}
+
+
+.nav-bar button{
+    background-color: var(--couleurbase);
+    color: white;
+    font-weight: bold;
+    border: none;
+}
+
+.nav-bar button .pro_version{
+    padding: 18px 10px;
+}
+
+.nav-bar button:hover{
+    background-color: white;
+    color: var(--couleurbase);
+}
+.second-bar-scroll{
+    background-color: #061429;
+} */
+
+/* Fin second barre  */
+
+/* Debut banierre  */
+
+header .banierre{
+    display: grid;
+    grid-template-columns: 5% 90% 5%;
+    width: 100%;
+    text-align: center;
+    padding: 10vh 0;
+    color: white;
+}
+
+header .banierre .chevron{
+    margin-top: 17vh;
+    font-size: 5vh;
+}
+
+header .banierre .titre{
+    margin-bottom: 3vh;
+    font-size: 3vh;
+}
+
+header .banierre h1{
+    font-size: 13vh;
+}
+
+header .banierre button{
+    padding: 2vh 3vh;
+    margin: 3vh;
+    font-size: 18px;
+    border: none;
+    /* z-index: -1; */
+}
+
+header .banierre button a{
+    color: white;
+    text-decoration: none;
+}
+
+header .banierre .free{
+    background-color: var(--couleurbase);
+    
+}
+
+header .banierre .contact{
+    background-color: #2B3B55;
+    
+}
+/* Fin banierre  */
+
+/* Debut statistics  */
+.section-accueil-1 .statistic{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 0 25vh;
+    
+    margin: 0 auto;
+}
+
+.section-accueil-1 .statistic .element-statistic{
+    display: flex;
+    padding: 3vh;
+    background-color: var(--couleurbase);
+    color: white;
+    margin-top: -5vh;
+}
+
+.section-accueil-1 .statistic .element-statistic button{
+    padding: 0 2vh;
+    background-color: white;
+    color: var(--couleurbase);
+    border: none;
+}
+
+.section-accueil-1 .statistic .element-statistic .info{
+    margin-left: 2vh;
+}
+
+.section-accueil-1 .statistic .element-statistic .number{
+    font-size: 3vh;
+    margin-top: 1vh;
+}
+
+.section-accueil-1 .statistic .middle{
+    background-color: var(--couleurfond);
+    color: var(--couleurbase);
+}
+
+.section-accueil-1 .statistic .middle button{
+    background-color: var(--couleurbase);
+    color: white;
+}
+
+.section-accueil-1 .statistic .middle .number{
+    color: black;
+}
+
+/* Fin statistics  */
+/* Fins Accueil Section 1 */
+
+.section-accueil{
+    margin: 0 auto;
+    padding: 0 20vh;
+}
+.section-accueil h1{
+    text-align: center;
+    font-size: 5vh;
+    margin: 1vh 0; 
+}
+
+.section-accueil h2{
+    text-align: center;
+    font-size: 3vh;
+    color: var(--couleurbase);
+}
+
+
+
+/* Ligne separation animée  */
+.animation-ligne {
+    margin: 0 auto;
+    width: 25vh;
+    height: 5px;
+    background-color:var(--couleurbase);
+  }
+  
+  .point {
+    width: 10px;
+    height: 5px;
+    margin-left:5px;
+    background-color: white;
+    position: relative;
+    animation-name: example;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    /* z-index: -1; */
+  } 
+  
+  @keyframes example {
+    0%   {background-color:white; left:0px; top:0px;}
+    25%  {background-color:white; left:22vh; top:0px;}
+    75%  {background-color:white; left:0px; top:0px;}
+    100% {background-color:white; left:0px; top:0px;}
+  }
+/* Fin ligne separation animée  */
+
+/* Debut section 2 Accueil: Section solution  */
+#section-accueil-solution{
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 25vh;
+}
+
+.container-solution{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 3vh;
+    row-gap: 5vh;
+    margin: 2vh 0;
+    
+}
+
+.container-solution .element-solution{
+    background-color: var(--couleurfond);
+    border-radius: 1vh;
+    padding: 5vh;
+    z-index: -1;
+}
+
+.element-solution:hover{
+    transform: scale(1.1);
+    transition: 1s;
+}
+
+.container-solution .element-solution h3 {
+    font-size: 3vh;
+    margin-bottom: 1vh;
+}
+
+.container-solution .element-solution .btn-icone{
+    padding: 2vh;
+    transform: rotate(45deg);
+    margin-bottom: 3vh;
+    color: white;
+    background-color: var(--couleurbase);
+    border: none;
+    z-index: -1;
+}
+
+.container-solution .element-solution .direction{
+    position: absolute;
+    margin-top: 4vh;
+    margin-left: -4vh;
+    background-color: #C7EAF7;
+    color: white;
+    padding: 1vh 2vh;
+    font-size: 3vh;
+    border: none;
+    z-index: -1;
+
+}
+.container-solution .element-solution .second{
+    margin-top: 3vh;
+    background-color: var(--couleurbase);
+}
+
+
+.container-solution .element-solution .icone{
+    display: inline-block;
+    transform: rotate(-45deg);
+    font-size: 2vh;
+}
+
+.container-solution .active{
+    background-color: var(--couleurbase);
+    color: white;
+}
+
+
+
+.container-solution .active .tel{
+    font-size: 4vh;
+    margin-top: 1vh;
+}
+
+/* Fin section 2 Accueil: section solution  */
+
+
+/* Debut section 2 Accueil: Section pricing  */
+#section-accueil-pricing{
+    margin: 0 auto;
+    /* padding: 0 20vh; */
+    margin-top: 25vh;
+}
+
+
+.container-pricing{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 5vh;
+    margin: 4vh 0;   
+}
+
+.container-pricing .element-pricing{
+    background-color: var(--couleurfond);
+    border-radius: 1vh;
+    z-index: -1;
+}
+
+.container-pricing .element-pricing .title,.content{
+    padding: 3vh; 
+}
+.element-pricing .title h3 {
+    font-size: 3vh;
+    margin-bottom: 1vh;
+    color: var(--couleurbase);
+}
+
+
+
+.element-pricing .content .dollars{
+    font-size: 3vh;
+    position: absolute;
+    margin-top: 1vh;
+    margin-right: 1vh;
+    z-index: -1;
+}
+.element-pricing .content .price{
+    font-size: 5vh;
+    margin-left: 2vh;
+    z-index: -1;
+}
+.element-pricing .content .month{
+    font-size: 2vh;
+}
+
+.element-pricing  p{
+    margin: 4vh 0;
+    font-size: 2vh;
+    color: gray;
+}
+
+.element-pricing .icone-check{
+    float: right;
+}
+
+.element-pricing .content .fa-check{
+    color: var(--couleurbase);
+}
+
+.element-pricing .content .close{
+    color: red;
+}
+
+.element-pricing .content button{
+    padding: 2vh 4vh;
+    color: white;
+    background-color: var(--couleurbase);
+    font-size: 2vh;
+    border: none;
+}
+
+.container-pricing .standard-plan{
+    background-color: white;
+    box-shadow: 6px 6px 28px  rgb(235, 232, 232);    
+}
+
+.container-pricing .element-pricing:hover{
+    transform: scale(1.1);
+    transition: 1s;
+}
+/* Fin section 3 Accueil: section princing  */
+
+
+/* Debut section 4 Accueil: Section Client say about Digital services  */
+#section-accueil-digital-service{
+    margin: 0 auto;
+    margin-top: 25vh;
+}
+.container-digital-service{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 5vh;
+    margin: 2vh 0;
+    box-sizing: border-box;
+    
+}
+
+.container-digital-service .element-digital-service{
+    background-color: var(--couleurfond);
+    border-radius: 1vh;
+    
+}
+.container-digital-service .second-client{
+    background-color: white;
+    box-shadow: 6px 6px 28px  rgb(235, 232, 232);    
+}
+
+.container-digital-service .client{
+    display: flex;
+    /* margin-bottom: 3vh; */
+    padding: 2vh 5vh;
+}
+.container-digital-service .para{
+    padding: 2vh 5vh;
+}
+
+
+.container-digital-service .info-client {
+    margin: 0 2vh;
+}
+.container-digital-service .info-client h3{
+    color: var(--couleurbase);
+    font-size: 3vh;
+    margin-bottom: 1vh;
+}
+
+.container-digital-service .client img{
+    width: 9vh;
+    height: 10vh;
+}
+
+/* Pagination  */
+#section-accueil-digital-service .pagination{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5vh;
+}
+
+.pagination hr{
+    border: 5px solid rgb(218, 218, 218);
+    margin-right: 1vh;
+    width: 2vh;
+}
+
+.pagination .page2{
+    border: 5px solid var(--couleurbase);
+    width: 4vh;
+}
+
+
+.container-digital-service .element-digital-service:hover{
+    transform: scale(1.1);
+    transition: 1s;
+}
+/* Fin section 4 Accueil: Section Client say about Digital services  */
+
+
+/* Debut section 5 Accueil: Section stuffs  */
+#section-accueil-stuff{
+    margin: 0 auto;
+    margin-top: 25vh;
+}
+
+
+.container-stuff{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 5vh;
+    margin: 2vh 0;    
+}
+
+.container-stuff .element-stuff{
+    background-color: var(--couleurfond);
+    border-radius: 1vh;
+    
+}
+
+.element-stuff:hover{
+    transform: scale(1.1);
+    transition: 1s;
+}
+
+.element-stuff img{
+    width: 100%;
+    height: 30vh;    
+    border-top-left-radius: 1vh;
+    border-top-right-radius:1vh;
+}
+
+.element-stuff .name-member{
+    text-align: center;
+    padding: 2vh 0;
+}
+
+.element-stuff .name-member h3{
+    color: var(--couleurbase);
+    font-size: 3vh;
+    margin-bottom: 1vh;
+}
+
+/* Fin section 5 Accueil: Section stuffs  */
+
+/* Debut section 6 Accueil: Section Blog  */
+#section-accueil-blog{
+    margin: 0 auto;
+    margin-top: 25vh;
+}
+
+.container-blog{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 5vh;
+    margin: 2vh 0;    
+}
+
+.container-blog .element-blog{
+    background-color: var(--couleurfond);
+    border-radius: 1vh;
+    z-index: -1;
+}
+
+.element-blog:hover{
+    transform: scale(1.1);
+    transition: 1s;
+}
+
+.element-blog img{
+    width: 100%;
+    height: 30vh;
+    border-top-left-radius: 1vh;
+    border-top-right-radius:1vh;
+}
+.element-blog button{
+    padding: 1vh 4vh;
+    font-size: 2vh;
+    color: white;
+    background-color: var(--couleurbase);
+    border: none;
+    display: block;
+    position: absolute;
+    margin-top: -25vh;
+    z-index: -1;
+}
+
+.element-blog .info{
+    padding: 2vh 3vh;
+}
+
+.element-blog .info .autheur-date{
+    display: flex;
+    margin-bottom: 1vh;
+}
+.element-blog .info .autheur-date .icone{
+    color: var(--couleurbase);
+    margin-right: 1vh;
+}
+
+.element-blog .info .autheur-date .autheur {
+    margin-right: 3vh;
+}
+
+.element-blog .info h3{
+    font-size: 3vh;
+    margin-bottom: 1vh;
+}
+
+.element-blog .info a{
+    display: block;
+    text-decoration: none;
+    margin-top: 1vh;
+    color: var(--couleurbase);
+}
+/* Fin section 6 Accueil: Section Blog  */
+
+
+
+/* Debut Media Queries  */
+/* Media queries  */
+/* @media only screen and (max-width: 1200px){
+
+    .top_bar{
+        display: none;
+    }
+
+    .hamburger{
+        display: block;
+        cursor: pointer;
+    }
+
+    .hamburger i{
+        font-size: 5vh;
+        color: #fefefe;
+        margin: 6px 0;
+    }
+
+    .second-bar{
+        padding: 0 80px;
+    }
+
+    .nav-bar.active{
+        height: 70vh;
+    }
+    .nav-bar{
+        height: 0;
+        position: absolute;
+        top: 50px;
+        left: 0;
+        right: 0;
+        width: 100vw;
+        overflow: hidden;
+    }
+
+    .nav-bar.active ul{
+        opacity: 1;
+    }
+    .nav-bar ul{
+        display: block;
+        width: fit-content;
+        margin: 80px auto;
+        text-align: center;
+        transition: 0.5s;
+        opacity: 0;
+    }
+
+    .nav-bar ul li .active-element{
+        border: none;
+    }
+    .nav-bar ul li a{
+        margin-bottom: 12px;
+        font-size: 28px;
+    }
+
+    .nav-bar button .pro_version{
+        color: white;
+    }
+
+    header .banierre.active{
+        margin-top: 72vh;
+        padding: 0;
+    }
+
+    
+    header .banierre{
+        padding: 5vh 0;
+    }
+    
+    header .banierre .titre{
+        font-size: 2vh;
+    }
+    
+    header .banierre h1{
+        font-size: 9vh;
+    }
+
+    .section-accueil-1 {
+        margin-top: 15vh;
+    }
+
+} */
+@media only screen and (max-width: 950px){
+    
+    .second-bar{
+        padding: 0 50px;
+    }
+
+    header .banierre{
+        padding: 0;
+    }
+
+    
+    header .banierre{
+        padding: 5vh 0;
+    }
+    
+    header .banierre .titre{
+        font-size: 2vh;
+    }
+    
+    header .banierre h1{
+        font-size: 9vh;
+    }
+    
+    .section-accueil-1 {
+        margin-top: 15vh;
+    }
+
+    .section-accueil{
+        margin: 0 auto;
+        padding: 0 5vh;
+    }
+
+    .section-accueil h1{
+        font-size: 3vh;
+    }
+    
+    .section-accueil h2{
+        font-size: 2vh;
+        color: var(--couleurbase);
+    }
+    
+    .section-accueil-1 .statistic{
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 0;
+        width: 50%;        
+    }
+    .section-accueil-1 .statistic .element-statistic{
+        margin-bottom: 5vh;
+    }
+
+    .container-solution{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        /* width: 100%; */
+    }
+
+    .container-pricing{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .container-digital-service{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        /* width: 100%; */
+    }
+
+    .container-stuff{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        /* width: 100%; */
+    }
+
+    .container-blog{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        /* width: 100%; */
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .second-bar{
+        padding: 0 30px;
+    }
+
+    header .banierre{
+        padding: 0;
+    }
+
+
+    
+    header .banierre{
+        padding: 3vh 0;
+    }
+    
+    
+    header .banierre h1{
+        font-size: 5vh;
+    }
+
+
+
+
+    .section-accueil{
+        margin: 0 auto;
+        padding: 0 2vh;
+    }
+    
+    .container-solution{
+        display: grid;
+        grid-template-columns: 1fr;
+        /* width: 100%; */
+    }
+
+    .container-pricing{
+        display: grid;
+        grid-template-columns: 1fr;
+        /* width: 100%; */
+        gap: 5vh;
+    }
+
+    .container-digital-service{
+        display: grid;
+        grid-template-columns: 1fr;
+        /* width: 100%; */
+    }
+
+    .container-stuff{
+        display: grid;
+        grid-template-columns: 1fr;
+        /* width: 100%; */
+    }
+    .container-blog{
+        display: grid;
+        grid-template-columns: 1fr;
+        /* width: 100%; */
+    }
+    
+}
+
+/* Fin Media Queries  */

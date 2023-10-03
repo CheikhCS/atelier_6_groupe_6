@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/* Debut section 2 Accueil: Section temoignage */
+
+#section-temoignage {
+    margin:0 auto;
+    text-align: center;
+    justify-content: center;
+    padding: 0 20vh;
+    margin-top: 10vh;
+
+}
+
+#section-temoignage h5{
+    color: #06A3DA;
+}
+
+.ligne-horizontal{
+    justify-content: center;
+    display: flex;
+}
+.ligne-horizontal hr{
+    border: 2px solid #06A3DA;
+}
+.Horizontal1{
+    width: 10vh;
+    margin-right: 1vh;
+}
+ .Horizontal2{
+    width: 10vh;
+    margin-right: 1vh;
+}
+
+.container-temoignage{
+    /* border: 1px solid red; */
+    display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        width: 72%;
+        height: 10vh;
+        margin-top: 6vh;
+        justify-content: center;
+        margin-left: 20vh;
+        
+}
+.element-temoignage img{
+    
+    width: 4em;
+    height: 3em;
+    /* padding-left: 1vh; */
+    margin-right: 50vh;
+    margin-left: 2em;
+    margin-top: 3vh;
+}
+.element-temoignage-milieu img{
+    width: 4em;
+    height: 3em;
+    margin-right: 50vh;
+    margin-left: 2em;
+    margin-top: 3vh;
+}
+
+.element-temoignage{
+    text-align: center;
+    background-color: #eef9ff;
+    border-radius: 1vh;
+    width: 40vh;
+    height: 25vh;
+}
+.element-temoignage-milieu{
+    width: 40vh;
+    background-color: #ffffff;
+    filter:  drop-shadow(0 0 20px #f6f6f6);
+    /* height: 25vh; */
+}
+
+.element-temoignage h3{
+    margin-left: 10vh;
+    margin-top: -7vh;
+    color: #06A3DA;
+}
+.element-temoignage-milieu h3{
+    margin-left: 10vh;
+    margin-top: -7vh;
+    color: #06A3DA;
+}
+
+ .element-temoignage p{
+    margin-top: 1em;
+    text-align: center;
+    justify-content: center;
+ }
+ .element-temoignage h6{
+    margin-left: 5vh;
+ }
+ .element-temoignage-milieu p{
+    margin-top: 1em;
+    text-align: center;
+ } 
+ .element-temoignage-milieu h6{
+    margin-left: 5vh;
+ } 
+ .element-temoignage hr{
+    margin-top: 1em;
+ } 
+
+ .element-temoignage-milieu hr{
+    margin-top: 1em;
+ }
+ .carre{
+    justify-content: center;
+    display: flex;
+    margin-top: 20vh;
+    width: 72%;
+    margin-left: 25vh;
+    gap: 5px;
+ }
+
+
+ /* Media queries  */
+ @media only screen and (max-width: 768px) {
+     .container-temoignage {
+         display: grid;
+         grid-template-columns: 1fr;
+         width: 100%;
+     }
+ }
+
+ @media only screen and (max-width: 600px) {
+
+     .container-temoignage {
+         display: grid;
+         grid-template-columns: 1fr;
+         /* width: 100%; */
+     }
+
+ }
+
+ /* Fin Media Queries  */

@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Debut section 2 Accueil: Section sevice  */
+h4{
+    color: #06A3DA;
+}
+
+
+#section-accueil-service{
+    margin: 0 auto;
+    text-align: center;
+    padding: 0 20vh;
+    margin-top: 10vh;
+}
+#section-accueil-service .ligne-separation {
+    display: flex;
+    justify-content: center;
+}
+
+#section-accueil-service .ligne-separation hr{
+    border: 2px solid #06A3DA;
+}
+
+#section-accueil-service .ligne1{
+    width: 5vh;
+    margin-right: 1vh;
+}
+
+#section-accueil-service .ligne2{
+    width: 10vh;
+    margin-right: 1vh;
+}
+
+.container-service{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 3vh;
+    row-gap: 5vh;
+    margin: 2vh 0;
+    
+}
+
+.container-service .element-service{
+    background-color: #EEF9FF;
+    border-radius: 1vh;
+    padding: 5vh;
+}
+
+.container-service .element-service h3 {
+    font-size: 3vh;
+    margin-bottom: 1vh;
+}
+
+.container-service .element-service .btn-icone{
+    padding: 2vh;
+    transform: rotate(45deg);
+    margin-bottom: 3vh;
+    color: white;
+    background-color: #06A3DA;
+    border: none;
+}
+
+.container-service .element-service .direction{
+    position: absolute;
+    margin-top: 4vh;
+    margin-left: -4vh;
+    background-color: #C7EAF7;
+    color: white;
+    padding: 1vh 2vh;
+    font-size: 3vh;
+    border: none;
+
+}
+.container-service .element-service .second{
+    margin-top: 3vh;
+    background-color: #06A3DA;
+}
+
+
+.container-service .element-service .icone{
+    display: inline-block;
+    transform: rotate(-45deg);
+    font-size: 2vh;
+}
+
+.container-service .active{
+    background-color: #06A3DA;
+    color: white;
+}
+
+
+
+.container-service .active .tel{
+    font-size: 4vh;
+    margin-top: 1vh;
+}
+
+/* Fin section 2 Accueil: section service  */
+
+/* Media queries  */
+@media only screen and (max-width: 950px){
+    .container-service{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    
+    .container-service{
+        display: grid;
+        grid-template-columns: 1fr;
+        /* width: 100%; */
+    } 
+    
+}
+
+/* Fin Media Queries  */
